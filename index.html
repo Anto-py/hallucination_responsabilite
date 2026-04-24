@@ -1,13 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QUAND L'IA INVENTE — C'est TOI qui paies</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>QUAND L'IA INVENTE — C'est TOI qui paies</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Bebas+Neue&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
         :root {
             --retro-teal: #127676;
             --retro-orange: #E4632E;
@@ -512,277 +513,253 @@
     </style>
 </head>
 <body>
-    <div class="page-frame">
-        <div class="corner-flourish top-left">❧</div>
-        <div class="corner-flourish top-right">❧</div>
-        <div class="corner-flourish bottom-left">❧</div>
-        <div class="corner-flourish bottom-right">❧</div>
-
-        <header class="header">
-            <h1>QUAND L'IA INVENTE<br><span>C'EST TOI QUI PAIES</span></h1>
-            <p class="subtitle">5 cas réels où des professionnels ont payé le prix des hallucinations de l'IA</p>
-        </header>
-
-        <div class="intro-card">
-            <p>Entre 2023 et 2025, des employés se sont fait virer, suspendre ou condamner à des amendes pour avoir diffusé des infos inventées par ChatGPT. Ces cas montrent un truc important : <strong>quand tu utilises l'IA au boulot, tu restes responsable de ce qu'elle raconte.</strong></p>
-        </div>
-
-        <div class="retro-separator">
-            <span class="flourish">✿</span>
-        </div>
-
-        <nav class="nav-tabs" role="tablist">
-            <button class="nav-tab active" onclick="showCase(1)" role="tab" aria-selected="true">
-                <span class="case-num">1</span>
+<div class="page-frame">
+<div class="corner-flourish top-left">❧</div>
+<div class="corner-flourish top-right">❧</div>
+<div class="corner-flourish bottom-left">❧</div>
+<div class="corner-flourish bottom-right">❧</div>
+<header class="header">
+<h1>QUAND L'IA INVENTE<br/><span>C'EST TOI QUI PAIES</span></h1>
+<p class="subtitle">5 cas réels où des professionnels ont payé le prix des hallucinations de l'IA</p>
+</header>
+<div class="intro-card">
+<p>Entre 2023 et 2025, des employés se sont fait virer, suspendre ou condamner à des amendes pour avoir diffusé des infos inventées par ChatGPT. Ces cas montrent un truc important : <strong>quand tu utilises l'IA au boulot, tu restes responsable de ce qu'elle raconte.</strong></p>
+</div>
+<div class="retro-separator">
+<span class="flourish">✿</span>
+</div>
+<nav class="nav-tabs" role="tablist">
+<button aria-selected="true" class="nav-tab active" onclick="showCase(1)" role="tab">
+<span class="case-num">1</span>
                 L'AVOCAT
             </button>
-            <button class="nav-tab" onclick="showCase(2)" role="tab" aria-selected="false">
-                <span class="case-num">2</span>
+<button aria-selected="false" class="nav-tab" onclick="showCase(2)" role="tab">
+<span class="case-num">2</span>
                 LE STAGIAIRE
             </button>
-            <button class="nav-tab" onclick="showCase(3)" role="tab" aria-selected="false">
-                <span class="case-num">3</span>
+<button aria-selected="false" class="nav-tab" onclick="showCase(3)" role="tab">
+<span class="case-num">3</span>
                 LA RÉDACTRICE
             </button>
-            <button class="nav-tab" onclick="showCase(4)" role="tab" aria-selected="false">
-                <span class="case-num">4</span>
+<button aria-selected="false" class="nav-tab" onclick="showCase(4)" role="tab">
+<span class="case-num">4</span>
                 LE JOURNALISTE
             </button>
-            <button class="nav-tab" onclick="showCase(5)" role="tab" aria-selected="false">
-                <span class="case-num">5</span>
+<button aria-selected="false" class="nav-tab" onclick="showCase(5)" role="tab">
+<span class="case-num">5</span>
                 L'AVOCATE
             </button>
-        </nav>
-
-        <div class="cases-container">
-            <!-- CAS 1 -->
-            <article class="case-card active" id="case-1">
-                <div class="case-header">
-                    <div class="case-icon">⚖️</div>
-                    <div class="case-title-block">
-                        <h2 class="case-title">L'AVOCAT QUI FAIT CONFIANCE À CHATGPT… ET SE PREND 5000$ D'AMENDE</h2>
-                        <div class="case-meta">
-                            <span>📍 New York, USA</span>
-                            <span>📅 Juin 2023</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="case-content">
-                    <p>Steven Schwartz est avocat depuis 30 ans. Un jour, il doit défendre un client contre une compagnie aérienne. Problème : il a peu de temps. Solution : il demande à ChatGPT de trouver des exemples de procès similaires pour appuyer son dossier.</p>
-                    
-                    <h3>LE PROBLÈME</h3>
-                    <p>ChatGPT invente <strong>6 procès qui n'ont jamais existé</strong> — avec de faux noms, de fausses dates, de faux juges. Quand l'avocat demande à ChatGPT "T'es sûr que ces procès existent vraiment ?", ChatGPT répond : "Oui oui, tu peux les trouver sur les bases de données juridiques."</p>
-                    <p>Spoiler : c'était faux. Le juge découvre tout. Il dit que le contenu inventé par ChatGPT, c'est du <em>"charabia"</em>.</p>
-                    
-                    <div class="consequence-box">
-                        <h4>⚡ CONSÉQUENCES</h4>
-                        <ul>
-                            <li><a href="https://www.cnn.com/2023/05/27/business/chat-gpt-avianca-mata-lawyers" class="source-link" target="_blank">Amende de 5000$</a> pour l'avocat et son cabinet</li>
-                            <li>Obligation d'écrire à tous les juges dont les noms avaient été utilisés pour s'excuser</li>
-                            <li>Cette affaire a fait le tour du monde et a changé les règles dans <a href="https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1:2022cv01461/575368/54/" class="source-link" target="_blank">des dizaines de tribunaux américains</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-
-            <!-- CAS 2 -->
-            <article class="case-card" id="case-2">
-                <div class="case-header">
-                    <div class="case-icon">🤥</div>
-                    <div class="case-title-block">
-                        <h2 class="case-title">LE JEUNE AVOCAT QUI ACCUSE UN STAGIAIRE… ALORS QUE C'EST LUI QUI A UTILISÉ CHATGPT</h2>
-                        <div class="case-meta">
-                            <span>📍 Colorado, USA</span>
-                            <span>📅 Novembre 2023</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="case-content">
-                    <p>Zachariah Crabill, jeune avocat, doit rédiger un document qu'il n'a jamais fait avant. Il se dit "Allez, ChatGPT va me faire gagner du temps."</p>
-                    
-                    <h3>LE PROBLÈME</h3>
-                    <p>ChatGPT invente <strong>3 faux procès</strong>. Le matin de l'audience au tribunal, Crabill réalise son erreur. Dans un SMS, il dit à sa collègue qu'il a "agi comme un idiot".</p>
-                    <p>Mais au lieu de dire la vérité au juge, il <strong>accuse un stagiaire</strong> d'avoir fait les erreurs. Il n'avoue que 6 jours plus tard.</p>
-                    
-                    <div class="consequence-box">
-                        <h4>⚡ CONSÉQUENCES</h4>
-                        <ul>
-                            <li><a href="https://www.fd.org/news/colorado-atty-suspended-using-sham-chatgpt-case-law" class="source-link" target="_blank">Première suspension d'un avocat américain pour usage d'IA</a> : 90 jours sans pouvoir travailler</li>
-                            <li>2 ans de probation</li>
-                            <li><a href="https://reason.com/volokh/2023/11/23/90-day-suspension-of-colorado-lawyer-who-filed-chatgpt-written-motion-with-hallucinated-cases/" class="source-link" target="_blank">Quatre fautes professionnelles retenues</a> dont "malhonnêteté"</li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-
-            <!-- CAS 3 -->
-            <article class="case-card" id="case-3">
-                <div class="case-header">
-                    <div class="case-icon">📰</div>
-                    <div class="case-title-block">
-                        <h2 class="case-title">LA RÉDACTRICE EN CHEF VIRÉE EN 48H POUR UNE FAUSSE INTERVIEW DE SCHUMACHER</h2>
-                        <div class="case-meta">
-                            <span>📍 Allemagne</span>
-                            <span>📅 Avril 2023</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="case-content">
-                    <p>Anne Hoffmann dirige un magazine people allemand depuis 14 ans. Elle publie une couverture choc : "Michael Schumacher, la première interview depuis son accident !"</p>
-                    
-                    <h3>LE PROBLÈME</h3>
-                    <p><a href="https://www.rte.ie/sport/motorsport/2023/0424/1378776-editor-fired-over-tasteless-ai-schumacher-interview/" class="source-link" target="_blank">L'interview est 100% inventée par IA</a>. Le pilote de F1 est gravement malade depuis 2013 et n'a jamais parlé. L'IA invente des citations sur sa santé, sa famille.</p>
-                    <p>Il y avait juste écrit en tout petit "ça semble vraiment réel" pour dire que c'était de l'IA — mais les lecteurs n'ont rien compris.</p>
-                    
-                    <div class="consequence-box">
-                        <h4>⚡ CONSÉQUENCES</h4>
-                        <ul>
-                            <li><a href="https://www.npr.org/2023/04/28/1172473999/michael-schumacher-ai-interview-german-magazine" class="source-link" target="_blank">Virée en 2 jours</a> après 14 ans de carrière</li>
-                            <li>Le magazine doit payer <a href="https://www.ibtimes.co.uk/magazine-who-printed-fake-ai-interview-michael-schumacher-pay-200000-f1-legends-family-1724749" class="source-link" target="_blank">200 000€ à la famille Schumacher</a></li>
-                            <li>Excuses publiques obligatoires</li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-
-            <!-- CAS 4 -->
-            <article class="case-card" id="case-4">
-                <div class="case-header">
-                    <div class="case-icon">🎤</div>
-                    <div class="case-title-block">
-                        <h2 class="case-title">LE JOURNALISTE QUI FAIT DIRE DES TRUCS AU GOUVERNEUR… QU'IL N'A JAMAIS DITS</h2>
-                        <div class="case-meta">
-                            <span>📍 Wyoming, USA</span>
-                            <span>📅 Août 2024</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="case-content">
-                    <p>Aaron Pelczar, journaliste d'un petit journal local, utilise l'IA pour écrire plus vite ses articles.</p>
-                    
-                    <h3>LE PROBLÈME</h3>
-                    <p>Il publie <strong>au moins 7 articles</strong> avec des citations complètement inventées. L'IA fait dire des trucs au gouverneur du Wyoming, à des procureurs, à des responsables politiques — qu'ils n'ont jamais prononcés.</p>
-                    <p>Dans un article, on voit même une instruction technique de ChatGPT ("structure pyramide inversée") qui s'est glissée dans le texte publié.</p>
-                    
-                    <div class="consequence-box">
-                        <h4>⚡ CONSÉQUENCES</h4>
-                        <ul>
-                            <li>Démission immédiate</li>
-                            <li>Le journal s'excuse officiellement et dit : <a href="https://cronkitenews.azpbs.org/2025/10/28/lawyers-ai-hallucinations-chatgpt/" class="source-link" target="_blank">"L'IA a mis des mots jamais prononcés dans la bouche de responsables publics"</a></li>
-                            <li>Nouvelle politique stricte sur l'IA au journal</li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-
-            <!-- CAS 5 -->
-            <article class="case-card" id="case-5">
-                <div class="case-header">
-                    <div class="case-icon">📚</div>
-                    <div class="case-title-block">
-                        <h2 class="case-title">L'AVOCATE QUI SE FAIT VIRER PUIS CONDAMNER : 21 FAUSSES CITATIONS SUR 23</h2>
-                        <div class="case-meta">
-                            <span>📍 Chicago, USA</span>
-                            <span>📅 2024-2025</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="case-content">
-                    <p>Danielle Malaty, avocate dans un gros cabinet, travaille sur un dossier important (empoisonnement au plomb d'enfants). Elle utilise ChatGPT pour trouver des références juridiques.</p>
-                    
-                    <h3>LE PROBLÈME</h3>
-                    <p>Sur un dossier : 1 fausse référence sur 58 (déjà pas ouf). Mais sur un autre dossier traité en même temps : <strong>21 fausses citations sur 23</strong>.</p>
-                    <p>Elle avoue n'avoir jamais vérifié si les références existaient vraiment.</p>
-                    
-                    <div class="consequence-box">
-                        <h4>⚡ CONSÉQUENCES</h4>
-                        <ul>
-                            <li><a href="https://chicago.suntimes.com/the-watchdogs/2025/12/09/goldberg-segalla-law-firm-cha-sanctioned-60-000-ai-chatgpt-lead-paint-court-case" class="source-link" target="_blank">Virée de son cabinet en juin 2025</a></li>
-                            <li>Son chef prend 10 000$ d'amende</li>
-                            <li>Le cabinet prend 49 500$ d'amende</li>
-                            <li><strong>Total : près de 60 000$</strong> pour cette seule affaire</li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-        </div>
-
-        <!-- Stats section -->
-        <section class="stats-section">
-            <h2>⚠️ C'EST PAS DES CAS ISOLÉS</h2>
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">486+</div>
-                    <div class="stat-label">Cas recensés dans le monde (fin 2025)</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">324</div>
-                    <div class="stat-label">Cas aux USA uniquement</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">128</div>
-                    <div class="stat-label">Avocats impliqués aux USA</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">2-3</div>
-                    <div class="stat-label">Nouveaux cas PAR JOUR fin 2025</div>
-                </div>
-            </div>
-            <p>Un chercheur (Damien Charlotin, HEC Paris) a recensé ces cas. Et ça s'accélère : on est passé de quelques cas par mois début 2024 à 2-3 cas par jour fin 2025.</p>
-            <p style="margin-top: 15px;"><strong style="color: var(--retro-jaune);">Ça touche pas que les avocats :</strong></p>
-            <ul>
-                <li><strong>Deloitte Australie</strong> doit <a href="https://www.cfodive.com/news/deloitte-refunds-60k-report-ai-errors-australian-government-accounting/803321/" target="_blank">rembourser 97 000$ au gouvernement</a> pour un rapport avec des références académiques inventées</li>
-                <li><strong>Sports Illustrated</strong> vire son PDG et 3 cadres après la découverte d'articles signés par des auteurs qui n'existent pas (avec photos IA)</li>
-                <li><strong>CNET</strong> suspend son programme d'articles IA : <a href="https://www.washingtonpost.com/media/2023/01/17/cnet-ai-articles-journalism-corrections/" target="_blank">41 articles sur 77 contenaient des erreurs</a></li>
-            </ul>
-        </section>
-
-        <!-- Takeaway section -->
-        <section class="takeaway-section">
-            <h2>💡 CE QU'IL FAUT RETENIR</h2>
-            <div class="takeaway-list">
-                <div class="takeaway-item">
-                    <span class="takeaway-icon">🚫</span>
-                    <div class="takeaway-text">
-                        <strong>"Je savais pas comment ça marche"</strong>
+</nav>
+<div class="cases-container">
+<!-- CAS 1 -->
+<article class="case-card active" id="case-1">
+<div class="case-header">
+<div class="case-icon">⚖️</div>
+<div class="case-title-block">
+<h2 class="case-title">L'AVOCAT QUI FAIT CONFIANCE À CHATGPT… ET SE PREND 5000$ D'AMENDE</h2>
+<div class="case-meta">
+<span>📍 New York, USA</span>
+<span>📅 Juin 2023</span>
+</div>
+</div>
+</div>
+<div class="case-content">
+<p>Steven Schwartz est avocat depuis 30 ans. Un jour, il doit défendre un client contre une compagnie aérienne. Problème : il a peu de temps. Solution : il demande à ChatGPT de trouver des exemples de procès similaires pour appuyer son dossier.</p>
+<h3>LE PROBLÈME</h3>
+<p>ChatGPT invente <strong>6 procès qui n'ont jamais existé</strong> — avec de faux noms, de fausses dates, de faux juges. Quand l'avocat demande à ChatGPT "T'es sûr que ces procès existent vraiment ?", ChatGPT répond : "Oui oui, tu peux les trouver sur les bases de données juridiques."</p>
+<p>Spoiler : c'était faux. Le juge découvre tout. Il dit que le contenu inventé par ChatGPT, c'est du <em>"charabia"</em>.</p>
+<div class="consequence-box">
+<h4>⚡ CONSÉQUENCES</h4>
+<ul>
+<li><a class="source-link" href="https://www.cnn.com/2023/05/27/business/chat-gpt-avianca-mata-lawyers" target="_blank">Amende de 5000$</a> pour l'avocat et son cabinet</li>
+<li>Obligation d'écrire à tous les juges dont les noms avaient été utilisés pour s'excuser</li>
+<li>Cette affaire a fait le tour du monde et a changé les règles dans <a class="source-link" href="https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1:2022cv01461/575368/54/" target="_blank">des dizaines de tribunaux américains</a></li>
+</ul>
+</div>
+</div>
+</article>
+<!-- CAS 2 -->
+<article class="case-card" id="case-2">
+<div class="case-header">
+<div class="case-icon">🤥</div>
+<div class="case-title-block">
+<h2 class="case-title">LE JEUNE AVOCAT QUI ACCUSE UN STAGIAIRE… ALORS QUE C'EST LUI QUI A UTILISÉ CHATGPT</h2>
+<div class="case-meta">
+<span>📍 Colorado, USA</span>
+<span>📅 Novembre 2023</span>
+</div>
+</div>
+</div>
+<div class="case-content">
+<p>Zachariah Crabill, jeune avocat, doit rédiger un document qu'il n'a jamais fait avant. Il se dit "Allez, ChatGPT va me faire gagner du temps."</p>
+<h3>LE PROBLÈME</h3>
+<p>ChatGPT invente <strong>3 faux procès</strong>. Le matin de l'audience au tribunal, Crabill réalise son erreur. Dans un SMS, il dit à sa collègue qu'il a "agi comme un idiot".</p>
+<p>Mais au lieu de dire la vérité au juge, il <strong>accuse un stagiaire</strong> d'avoir fait les erreurs. Il n'avoue que 6 jours plus tard.</p>
+<div class="consequence-box">
+<h4>⚡ CONSÉQUENCES</h4>
+<ul>
+<li><a class="source-link" href="https://www.fd.org/news/colorado-atty-suspended-using-sham-chatgpt-case-law" target="_blank">Première suspension d'un avocat américain pour usage d'IA</a> : 90 jours sans pouvoir travailler</li>
+<li>2 ans de probation</li>
+<li><a class="source-link" href="https://reason.com/volokh/2023/11/23/90-day-suspension-of-colorado-lawyer-who-filed-chatgpt-written-motion-with-hallucinated-cases/" target="_blank">Quatre fautes professionnelles retenues</a> dont "malhonnêteté"</li>
+</ul>
+</div>
+</div>
+</article>
+<!-- CAS 3 -->
+<article class="case-card" id="case-3">
+<div class="case-header">
+<div class="case-icon">📰</div>
+<div class="case-title-block">
+<h2 class="case-title">LA RÉDACTRICE EN CHEF VIRÉE EN 48H POUR UNE FAUSSE INTERVIEW DE SCHUMACHER</h2>
+<div class="case-meta">
+<span>📍 Allemagne</span>
+<span>📅 Avril 2023</span>
+</div>
+</div>
+</div>
+<div class="case-content">
+<p>Anne Hoffmann dirige un magazine people allemand depuis 14 ans. Elle publie une couverture choc : "Michael Schumacher, la première interview depuis son accident !"</p>
+<h3>LE PROBLÈME</h3>
+<p><a class="source-link" href="https://www.rte.ie/sport/motorsport/2023/0424/1378776-editor-fired-over-tasteless-ai-schumacher-interview/" target="_blank">L'interview est 100% inventée par IA</a>. Le pilote de F1 est gravement malade depuis 2013 et n'a jamais parlé. L'IA invente des citations sur sa santé, sa famille.</p>
+<p>Il y avait juste écrit en tout petit "ça semble vraiment réel" pour dire que c'était de l'IA — mais les lecteurs n'ont rien compris.</p>
+<div class="consequence-box">
+<h4>⚡ CONSÉQUENCES</h4>
+<ul>
+<li><a class="source-link" href="https://www.npr.org/2023/04/28/1172473999/michael-schumacher-ai-interview-german-magazine" target="_blank">Virée en 2 jours</a> après 14 ans de carrière</li>
+<li>Le magazine doit payer <a class="source-link" href="https://www.ibtimes.co.uk/magazine-who-printed-fake-ai-interview-michael-schumacher-pay-200000-f1-legends-family-1724749" target="_blank">200 000€ à la famille Schumacher</a></li>
+<li>Excuses publiques obligatoires</li>
+</ul>
+</div>
+</div>
+</article>
+<!-- CAS 4 -->
+<article class="case-card" id="case-4">
+<div class="case-header">
+<div class="case-icon">🎤</div>
+<div class="case-title-block">
+<h2 class="case-title">LE JOURNALISTE QUI FAIT DIRE DES TRUCS AU GOUVERNEUR… QU'IL N'A JAMAIS DITS</h2>
+<div class="case-meta">
+<span>📍 Wyoming, USA</span>
+<span>📅 Août 2024</span>
+</div>
+</div>
+</div>
+<div class="case-content">
+<p>Aaron Pelczar, journaliste d'un petit journal local, utilise l'IA pour écrire plus vite ses articles.</p>
+<h3>LE PROBLÈME</h3>
+<p>Il publie <strong>au moins 7 articles</strong> avec des citations complètement inventées. L'IA fait dire des trucs au gouverneur du Wyoming, à des procureurs, à des responsables politiques — qu'ils n'ont jamais prononcés.</p>
+<p>Dans un article, on voit même une instruction technique de ChatGPT ("structure pyramide inversée") qui s'est glissée dans le texte publié.</p>
+<div class="consequence-box">
+<h4>⚡ CONSÉQUENCES</h4>
+<ul>
+<li>Démission immédiate</li>
+<li>Le journal s'excuse officiellement et dit : <a class="source-link" href="https://cronkitenews.azpbs.org/2025/10/28/lawyers-ai-hallucinations-chatgpt/" target="_blank">"L'IA a mis des mots jamais prononcés dans la bouche de responsables publics"</a></li>
+<li>Nouvelle politique stricte sur l'IA au journal</li>
+</ul>
+</div>
+</div>
+</article>
+<!-- CAS 5 -->
+<article class="case-card" id="case-5">
+<div class="case-header">
+<div class="case-icon">📚</div>
+<div class="case-title-block">
+<h2 class="case-title">L'AVOCATE QUI SE FAIT VIRER PUIS CONDAMNER : 21 FAUSSES CITATIONS SUR 23</h2>
+<div class="case-meta">
+<span>📍 Chicago, USA</span>
+<span>📅 2024-2025</span>
+</div>
+</div>
+</div>
+<div class="case-content">
+<p>Danielle Malaty, avocate dans un gros cabinet, travaille sur un dossier important (empoisonnement au plomb d'enfants). Elle utilise ChatGPT pour trouver des références juridiques.</p>
+<h3>LE PROBLÈME</h3>
+<p>Sur un dossier : 1 fausse référence sur 58 (déjà pas ouf). Mais sur un autre dossier traité en même temps : <strong>21 fausses citations sur 23</strong>.</p>
+<p>Elle avoue n'avoir jamais vérifié si les références existaient vraiment.</p>
+<div class="consequence-box">
+<h4>⚡ CONSÉQUENCES</h4>
+<ul>
+<li><a class="source-link" href="https://chicago.suntimes.com/the-watchdogs/2025/12/09/goldberg-segalla-law-firm-cha-sanctioned-60-000-ai-chatgpt-lead-paint-court-case" target="_blank">Virée de son cabinet en juin 2025</a></li>
+<li>Son chef prend 10 000$ d'amende</li>
+<li>Le cabinet prend 49 500$ d'amende</li>
+<li><strong>Total : près de 60 000$</strong> pour cette seule affaire</li>
+</ul>
+</div>
+</div>
+</article>
+</div>
+<!-- Stats section -->
+<section class="stats-section">
+<h2>⚠️ C'EST PAS DES CAS ISOLÉS</h2>
+<div class="stats-grid">
+<div class="stat-item">
+<div class="stat-number">486+</div>
+<div class="stat-label">Cas recensés dans le monde (fin 2025)</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">324</div>
+<div class="stat-label">Cas aux USA uniquement</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">128</div>
+<div class="stat-label">Avocats impliqués aux USA</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">2-3</div>
+<div class="stat-label">Nouveaux cas PAR JOUR fin 2025</div>
+</div>
+</div>
+<p>Un chercheur (Damien Charlotin, HEC Paris) a recensé ces cas. Et ça s'accélère : on est passé de quelques cas par mois début 2024 à 2-3 cas par jour fin 2025.</p>
+<p style="margin-top: 15px;"><strong style="color: var(--retro-jaune);">Ça touche pas que les avocats :</strong></p>
+<ul>
+<li><strong>Deloitte Australie</strong> doit <a href="https://www.cfodive.com/news/deloitte-refunds-60k-report-ai-errors-australian-government-accounting/803321/" target="_blank">rembourser 97 000$ au gouvernement</a> pour un rapport avec des références académiques inventées</li>
+<li><strong>Sports Illustrated</strong> vire son PDG et 3 cadres après la découverte d'articles signés par des auteurs qui n'existent pas (avec photos IA)</li>
+<li><strong>CNET</strong> suspend son programme d'articles IA : <a href="https://www.washingtonpost.com/media/2023/01/17/cnet-ai-articles-journalism-corrections/" target="_blank">41 articles sur 77 contenaient des erreurs</a></li>
+</ul>
+</section>
+<!-- Takeaway section -->
+<section class="takeaway-section">
+<h2>💡 CE QU'IL FAUT RETENIR</h2>
+<div class="takeaway-list">
+<div class="takeaway-item">
+<span class="takeaway-icon">🚫</span>
+<div class="takeaway-text">
+<strong>"Je savais pas comment ça marche"</strong>
                         → Pas une excuse valable
                     </div>
-                </div>
-                <div class="takeaway-item">
-                    <span class="takeaway-icon">👤</span>
-                    <div class="takeaway-text">
-                        <strong>"C'est l'IA qui a fait l'erreur, pas moi"</strong>
+</div>
+<div class="takeaway-item">
+<span class="takeaway-icon">👤</span>
+<div class="takeaway-text">
+<strong>"C'est l'IA qui a fait l'erreur, pas moi"</strong>
                         → Tu restes responsable de ce que tu diffuses
                     </div>
-                </div>
-                <div class="takeaway-item">
-                    <span class="takeaway-icon">😰</span>
-                    <div class="takeaway-text">
-                        <strong>"J'ai paniqué et j'ai menti"</strong>
+</div>
+<div class="takeaway-item">
+<span class="takeaway-icon">😰</span>
+<div class="takeaway-text">
+<strong>"J'ai paniqué et j'ai menti"</strong>
                         → Ça aggrave toujours les sanctions
                     </div>
-                </div>
-                <div class="takeaway-item">
-                    <span class="takeaway-icon">✍️</span>
-                    <div class="takeaway-text">
-                        <strong>En gros :</strong>
+</div>
+<div class="takeaway-item">
+<span class="takeaway-icon">✍️</span>
+<div class="takeaway-text">
+<strong>En gros :</strong>
                         Quand tu utilises l'IA au boulot, c'est comme si tu signais de ton nom. Si c'est faux, c'est ta responsabilité.
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <p>Formation <span class="highlight">Littératie IA</span> — Complément d'information</p>
-        </footer>
-    <div class="ab-attribution" style="text-align:center;margin-top:2rem;padding-top:1rem;border-top:1px solid rgba(128,128,128,0.25);font-size:0.8rem;opacity:0.65;">
-  <a href="https://www.linkedin.com/in/antonin-bareau/" target="_blank" rel="noopener" style="font-weight:bold;color:inherit;text-decoration:none;">Antonin Bareau</a>
-  &nbsp;&mdash;&nbsp;
-  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Licence CC BY-SA 4.0</a>
 </div>
 </div>
-
-    <script>
+</section>
+<footer class="footer">
+<p>Formation <span class="highlight">Littératie IA</span> — Complément d'information</p>
+</footer>
+<div class="ab-attribution" style="text-align:center;margin-top:2rem;padding-top:1rem;border-top:1px solid rgba(128,128,128,0.25);font-size:0.8rem;opacity:0.65;">
+<a href="https://www.linkedin.com/in/antonin-bareau/" rel="noopener" style="font-weight:bold;color:inherit;text-decoration:none;" target="_blank">Antonin Bareau</a>
+   — 
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" style="color:inherit;text-decoration:none;" target="_blank">Licence CC BY-SA 4.0</a>
+</div></div>
+<script>
         function showCase(num) {
             // Hide all cases
             document.querySelectorAll('.case-card').forEach(card => {
@@ -817,6 +794,5 @@
             }
         });
     </script>
-
 </body>
 </html>
